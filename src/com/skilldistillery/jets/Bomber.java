@@ -17,4 +17,11 @@ public class Bomber extends Jet implements AirToGroundAttacker{
 		System.out.println(".");
 		System.out.println("KAAAABOOOOOM");
 	}
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Jet Class: Bomber. ").append(super.toString());
+		return builder.toString();
+	}
+	
 }

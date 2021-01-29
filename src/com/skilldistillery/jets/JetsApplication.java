@@ -13,7 +13,10 @@ public class JetsApplication {
 		AirField af = new AirField();
 		af.setAirFleet(populateAirField("jet.txt"));
 		System.out.println("Running!");
-		af.displayFleet();
+//		af.displayFleet();
+//		Jet j = new Fighter("model", 400.0, 1438, 700_000_000);
+//		j.fly();
+		af.flyFleet();
 	}
 
 	private void menu() {
@@ -40,18 +43,18 @@ public class JetsApplication {
 			while ((line = br.readLine()) != null) {
 				String[] jetInfo = line.split(", ");
 				if (jetInfo[0].equals("F")) {
-					Fighter f = new Fighter(jetInfo[1], Double.parseDouble(jetInfo[2]),
-							Integer.parseInt(jetInfo[3]), Long.parseLong(jetInfo[4]));
+					Fighter f = new Fighter(jetInfo[1], Double.parseDouble(jetInfo[2]), Integer.parseInt(jetInfo[3]),
+							Long.parseLong(jetInfo[4]));
 					airFleet.add(f);
 				}
 				if (jetInfo[0].equals("B")) {
-					Bomber b = new Bomber(jetInfo[1], Double.parseDouble(jetInfo[2]),
-							Integer.parseInt(jetInfo[3]), Long.parseLong(jetInfo[4]));
+					Bomber b = new Bomber(jetInfo[1], Double.parseDouble(jetInfo[2]), Integer.parseInt(jetInfo[3]),
+							Long.parseLong(jetInfo[4]));
 					airFleet.add(b);
 				}
 				if (jetInfo[0].equals("JJ")) {
-					JetImpl f = new JetImpl(jetInfo[1], Double.parseDouble(jetInfo[2]),
-							Integer.parseInt(jetInfo[3]), Long.parseLong(jetInfo[4]));
+					JetImpl f = new JetImpl(jetInfo[1], Double.parseDouble(jetInfo[2]), Integer.parseInt(jetInfo[3]),
+							Long.parseLong(jetInfo[4]));
 					airFleet.add(f);
 				}
 			}

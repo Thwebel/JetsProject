@@ -15,13 +15,18 @@ public class AirField {
 	
 	
 	public void flyFleet() {
+		int index = 0;
 		for (Jet jet : airFleet) {
+			System.out.print("Lot " + index + ": ");
 			jet.fly();
+			index++;
 		}
 	}
 	public void displayFleet() {
+		int index = 0;
 		for (Jet jet : airFleet) {
-			System.out.println(jet);
+			System.out.println("Lot: " + index +".) "+ jet);
+			index++;
 		}
 	}
 	public void addJet(Jet jet) {

@@ -16,5 +16,10 @@ public class Fighter extends Jet implements AirToAirAttacker {
 		System.out.println("pew pew pew");
 		System.out.println("Hostiles Destroyed, you can be my wingman anytime.");
 	}
-
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Jet Class: Fighter. ").append(super.toString());
+		return builder.toString();
+	}
 }
