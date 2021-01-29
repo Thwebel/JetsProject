@@ -1,0 +1,5 @@
+F, McDonnell Douglas F-15 Eagle, 1875, 2992, 77900000
+F, North American P-51 Mustang, 437, 999, 2500000
+B, Northrop Grumman B-2 Spirit, 628, 6897, 929000000
+B, Consolidated B-24 Liberator, 303 , 3560, 5000000
+JJ, U-2 spy plane, 500, 7000, 420000000

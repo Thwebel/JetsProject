@@ -14,4 +14,21 @@ public class AirField {
 	}
 	
 	
+	public void flyFleet() {
+		for (Jet jet : airFleet) {
+			jet.fly();
+		}
+	}
+	public void displayFleet() {
+		for (Jet jet : airFleet) {
+			System.out.println(jet);
+		}
+	}
+	public void addJet(Jet jet) {
+		airFleet.add(jet);
+	}
+	public void removeJet(Jet jet) {
+		airFleet.remove(jet);
+	}
+	
  }
