@@ -14,9 +14,11 @@ public class JetsApplication {
 		af.setAirFleet(populateAirField("jet.txt"));
 		System.out.println("Running!");
 //		af.displayFleet();
+//		af.flyFleet();
 //		Jet j = new Fighter("model", 400.0, 1438, 700_000_000);
 //		j.fly();
-		af.flyFleet();
+		af.findFastest();
+		af.findLongestRange();
 	}
 
 	private void menu() {
