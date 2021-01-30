@@ -13,6 +13,22 @@ public class AirField {
 		this.airFleet = airFleet;
 	}
 	
+	public void scrambleFighters() {
+		for (Jet jet : airFleet) {
+			if (jet.getClass().getSimpleName().equals("Fighter")) {
+				System.out.println(jet);
+				((Fighter) jet).scrambleFighters();
+			}
+		}
+	}
+	public void dropBombs() {
+		for (Jet jet : airFleet) {
+			if (jet.getClass().getSimpleName().equals("Bomber")) {
+				System.out.println(jet);
+				((Bomber) jet).dropBomb();
+			}
+		}
+	}
 	public void findFastest() {
 		double speed = 0.0;
 		Jet fastestJet = new JetImpl(null, 0,0,0);

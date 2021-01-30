@@ -6,7 +6,7 @@ public class Fighter extends Jet implements AirToAirAttacker {
 		super(model, speed, range, price);
 		// TODO Auto-generated constructor stub
 	}
-	public void defendBomber() {
+	public void scrambleFighters() {
 		
 		System.out.println("Red Leader going in!!");
 		System.out.println("pew pew pew");

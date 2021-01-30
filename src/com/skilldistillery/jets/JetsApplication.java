@@ -15,10 +15,13 @@ public class JetsApplication {
 		System.out.println("Running!");
 //		af.displayFleet();
 //		af.flyFleet();
+//		af.findFastest();
+//		af.findLongestRange();
+//		af.scrambleFighters();
 //		Jet j = new Fighter("model", 400.0, 1438, 700_000_000);
 //		j.fly();
-		af.findFastest();
-		af.findLongestRange();
+		af.dropBombs();
+		
 	}
 
 	private void menu() {
@@ -31,7 +34,7 @@ public class JetsApplication {
 		System.out.println("|3.) View fastest jet.                 |");
 		System.out.println("|4.) View jet with longest range.      |");
 		System.out.println("|5.) Drop Bombs.                       |");
-		System.out.println("|6.) Defend Bombers.                   |");
+		System.out.println("|6.) Scramble Fighters.                |");
 		System.out.println("|7.) Add a jet to Fleet.               |");
 		System.out.println("|8.) Remove a jet from Fleet.          |");
 		System.out.println("|9.) Quit.                             |");

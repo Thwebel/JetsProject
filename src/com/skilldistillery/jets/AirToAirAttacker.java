@@ -1,5 +1,5 @@
 package com.skilldistillery.jets;
 
 public interface AirToAirAttacker {
-	public void defendBomber();
+	public void scrambleFighters();
 }
