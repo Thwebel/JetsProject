@@ -55,6 +55,7 @@ public class JetsApplication {
 				break;
 			}
 		}
+		kb.close();
 	}
 
 	private void explainer() {
