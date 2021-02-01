@@ -16,7 +16,7 @@ public class AirField {
 	public void scrambleFighters() {
 		for (Jet jet : airFleet) {
 			if (jet.getClass().getSimpleName().equals("Fighter")) {
-				System.out.println(jet);
+//				System.out.println(jet);
 				((Fighter) jet).scrambleFighters();
 			}
 		}
@@ -24,7 +24,7 @@ public class AirField {
 	public void dropBombs() {
 		for (Jet jet : airFleet) {
 			if (jet.getClass().getSimpleName().equals("Bomber")) {
-				System.out.println(jet);
+//				System.out.println(jet);
 				((Bomber) jet).dropBomb();
 			}
 		}
@@ -71,8 +71,8 @@ public class AirField {
 	public void addJet(Jet jet) {
 		airFleet.add(jet);
 	}
-	public void removeJet(Jet jet) {
-		airFleet.remove(jet);
+	public void removeJet(int index) {
+		airFleet.remove(index);
 	}
 	
  }

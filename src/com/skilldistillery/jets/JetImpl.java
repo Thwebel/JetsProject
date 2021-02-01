@@ -6,6 +6,9 @@ public class JetImpl extends Jet{
 		super(model, speed, range, price);
 		// TODO Auto-generated constructor stub
 	}
+	public JetImpl() {
+		// TODO Auto-generated constructor stub
+	}
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
